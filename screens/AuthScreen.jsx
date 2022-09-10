@@ -1,14 +1,16 @@
 import * as React from 'react';
 import PropTypes from 'prop-types'; // ES6
 
-import { View, Text, Button } from 'react-native';
+import { Container, VStack, Button, Text } from 'native-base';
 
 function AuthScreen({ navigation }) {
   return (
-    <View>
-      <Text>AuthScreen</Text>
-      <Button title="Go to Main" onPress={() => navigation.navigate('MainScreen')} />
-    </View>
+    <Container>
+      <VStack>
+        <Text>AuthScreen</Text>
+        <Button onPress={() => navigation.navigate('MainScreen')}>Go to MainScreen</Button>
+      </VStack>
+    </Container>
   );
 }
 
