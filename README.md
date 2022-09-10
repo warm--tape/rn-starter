@@ -10,6 +10,13 @@ Configured libraries:
 
 - react-native-dotenv
 - react-navigation
+- native-base
+- prop-types
+
+Configuration added for:
+
+- eslint
+- prettier
 
 Todo:
 
