@@ -2,22 +2,35 @@
 
 Initial setup of base project.
 
-To start:
+## Getting Started
 
-    npx expo start
+Rename the project to your own project name:
 
-Configured libraries:
+- app.json
+- package.json
+- README.md
+
+Delete package-lock.json and run `npm install` to install all dependencies.
+
+To start dev server, run `npx expo start`
+
+## Configured libraries:
 
 - react-native-dotenv
 - react-navigation
 - native-base
 - prop-types
 
-Configuration added for:
+## Configuration added for:
 
 - eslint
 - prettier
 
-Todo:
+## Enabling react-native-web support
 
-- fix import of @env. MainScreen.js ln 3 & https://www.angularfix.com/2022/07/react-native-dotenv-unable-to-resolve.html
+1. Run `npx expo install react-native-web@~0.18.7 react-dom@18.0.0 @expo/webpack-config@^0.17.0`
+2. Uncomment the 'web' string in app.json
+
+## Todo:
+
+- Nothing yet.
